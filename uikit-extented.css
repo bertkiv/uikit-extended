@@ -1,0 +1,35 @@
+.uk-button {
+	-webkit-appearance: none;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+}
+
+/* Large screen and bigger */
+@media (min-width: 1920px) {
+  .uk-child-width-1-1\@xxl > * {
+    width: 100%;
+  }
+  .uk-child-width-1-2\@xxl > * {
+    width: 50%;
+  }
+  .uk-child-width-1-3\@xxl > * {
+    width: calc(100% * 1 / 3.001);
+  }
+  .uk-child-width-1-4\@xxl > * {
+    width: 25%;
+  }
+  .uk-child-width-1-5\@xxl > * {
+    width: 20%;
+  }
+  .uk-child-width-1-6\@xxl > * {
+    width: calc(100% * 1 / 6.001);
+  }
+  .uk-child-width-auto\@xxl > * {
+    width: auto;
+  }
+  .uk-child-width-expand\@xxl > :not([class*='uk-width']) {
+    flex: 1;
+    min-width: 1px;
+  }
+}
