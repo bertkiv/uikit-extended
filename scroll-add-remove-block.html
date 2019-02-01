@@ -1,0 +1,7 @@
+<script>
+    jQuery(function(f) {
+        f(window).scroll(function() {
+            f('#logo_animate')[(f(this).scrollTop() > 450 ? "add" : "remove") + "Class"]("logo_visible");
+        });
+    });
+</script>
