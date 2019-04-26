@@ -1,5 +1,6 @@
 <style type="text/css" media="screen">
     .uk-animation-stroke {
+        color: #222222;
         -webkit-transition: all 0.3s ease-in-out;
         -moz-transition: all 0.3s ease-in-out;
         -o-transition: all 0.3s ease-in-out;
@@ -8,30 +9,48 @@
     .uk-animation-stroke:hover {
         color: #ffcc00;
     }
+    .uk-modal-dialog,
+    .uk-modal-full {
+        background: #000000;
+    }
+    .uk-modal-close-full,
+    .uk-icon .uk-animation-stroke {
+        background: transparent;
+        color: #ffffff;
+    }
+    .uk-icon .uk-animation-stroke:hover {
+        color: #ffcc00;
+    }
+    .uk-card {
+        cursor: pointer;
+    }
 </style>
-<div style="background: #000000; padding: 30px;" class="uk-child-width-1-4@m uk-text-center uk-margin-xlarge-bottom" uk-grid uk-scrollspy="cls: uk-animation-stroke; target: svg; delay: 500; repeat: true">
-    <div>
-        <div class="uk-card uk-card-body">
-            <h3 class="uk-card-title">Stroke</h3>
-            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/cloud-upload.svg#cloud-upload" uk-svg="stroke-animation: true">
-        </div>
-    </div>
-    <div>
-        <div class="uk-card uk-card-body">
-            <h3 class="uk-card-title">Stroke</h3>
-            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/cloud-upload.svg#cloud-upload" uk-svg="stroke-animation: true">
-        </div>
-    </div>
-    <div>
-        <div class="uk-card uk-card-body">
-            <h3 class="uk-card-title">Stroke</h3>
-            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/cloud-upload.svg#cloud-upload" uk-svg="stroke-animation: true">
-        </div>
-    </div>
-    <div>
-        <div class="uk-card uk-card-body">
-            <h3 class="uk-card-title">Stroke</h3>
-            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/cloud-upload.svg#cloud-upload" uk-svg="stroke-animation: true">
-        </div>
+<div id="modal-example" class="uk-modal-full" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body uk-text-center" uk-scrollspy="cls: uk-animation-stroke; target: svg; delay: 300; repeat: true">
+        <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+        <p>
+            <div class="uk-list uk-list-large">
+                <div>
+                    <div class="uk-card uk-card-body">
+                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/about.svg#cloud-upload" uk-svg="stroke-animation: true">
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-body">
+                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/services.svg#cloud-upload" uk-svg="stroke-animation: true">
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-body">
+                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/work.svg#cloud-upload" uk-svg="stroke-animation: true">
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-body">
+                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/contact.svg#cloud-upload" uk-svg="stroke-animation: true">
+                    </div>
+                </div>
+            </div>
+        </p>
     </div>
 </div>
